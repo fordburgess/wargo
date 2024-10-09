@@ -1,13 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter } from 'react-router-dom';
+import SocketProvider from './contexts/SocketContext'
 import AppRoutes from './routes/routes'
 import './App.css';
 
 function App() {
+  const [isConnected, setIsConnected] = useState<Boolean>(false); 
+
   return (
-    <BrowserRouter>
-      <AppRoutes />
-    </BrowserRouter>
+    <SocketProvider>
+      <BrowserRouter>
+        <AppRoutes />
+      </BrowserRouter>
+    </SocketProvider>
   );
 }
 
