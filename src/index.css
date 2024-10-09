@@ -11,6 +11,14 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  outline: none;
+}
+
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -21,6 +29,10 @@ html, body {
 
 @layer components {
   .large-rounded-input {
-    @apply rounded-3xl bg-transparent text-inherit text-xl border-solid border-white
+    @apply rounded-3xl bg-transparent text-inherit text-xl border-2 border-white px-2 py-1
+  }
+
+  .standard-button {
+    @apply rounded-3xl py-2 text-base
   }
 }

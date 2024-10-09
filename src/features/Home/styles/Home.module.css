@@ -1,0 +1,14 @@
+#gamerTagInput {
+    width: 400px;
+    margin-bottom: 1.25rem;
+}
+
+#codeInput {
+    width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+#joinButton {
+    width: 400px;
+    background-color: rgb(71, 71, 71);
+}
